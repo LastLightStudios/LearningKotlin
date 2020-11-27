@@ -5,6 +5,12 @@ fun timeInMinutesForResin(resin: Int): Int {
     return resin * 8;
 }
 
+fun convertMinutesOnlyToMinutesAndHours(time: Int): String{
+    var hours = time / 60
+    var minutes = time % 60
+    return "$hours Hours and $minutes Minutes."
+}
+
 fun main(args: Array<String>) {
     println("Welcome")
     println("How much Resin do you need?")
@@ -16,6 +22,6 @@ fun main(args: Array<String>) {
         inResin = scanner.nextInt()
     }
 
-    var timeForResin = timeInMinutesForResin(inResin).toString()
+    var timeForResin = convertMinutesOnlyToMinutesAndHours(timeInMinutesForResin(inResin))
     println("It will take $timeForResin minutes")
 }
