@@ -12,8 +12,7 @@ fun convertMinutesOnlyToMinutesAndHours(time: Int): String{
 }
 
 fun main(args: Array<String>) {
-    println("Welcome")
-    println("How much Resin do you need?")
+    println(""Welcome + \nHow much Resin do you need?")
     val scanner = Scanner(System.`in`)
     var inResin = scanner.nextInt()
     while (inResin < 1){

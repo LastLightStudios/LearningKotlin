@@ -12,6 +12,7 @@ repositories {
 }
 dependencies {
     testImplementation(kotlin("test-junit"))
+	implementation 'com.pinterest:ktlint:0.39.0' // For stylistic consistency
 }
 tasks.withType<KotlinCompile>() {
     kotlinOptions.jvmTarget = "1.8"
